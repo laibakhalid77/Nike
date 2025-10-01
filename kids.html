@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>womens</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<style>
+    body{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .dropdown-menu.mega-menu {
+      width: 500px;
+      padding: 20px;
+      margin-top: 0px ;
+      border-top: none;
+      border: 1px solid #ddd;
+      display: none;
+      
+      left: 0;
+      right: 0;
+    }
+
+    .mega-menu .row > div {
+      padding: 0 20px;
+    }
+
+    .mega-menu h6 {
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: large;
+    }
+
+    .mega-menu a {
+      display: block;
+      text-decoration: none;
+      color: #000000;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nav-item.dropdown {
+      position: relative;
+
+    }
+
+    .dropdown-toggle::after {
+      display: none; 
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-box input {
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      padding: 5px 15px;
+      font-size: 14px;
+    }
+
+    .search-box button {
+      border: none;
+      background-color: #000;
+      color: #fff;
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+
+    .nav-contact {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 15px;
+      color: #000;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .nav-contact:hover {
+      color: #007bff;
+    }
+    .search-container {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #555;
+}
+.box-shadow{
+      box-shadow: 0px 4px 10px rgb(216, 216, 216);
+      transition: all 0.3s ease;
+    }
+    .box-shadow:hover{
+         transform: translateY(-10px);
+    }
+
+ .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.fb-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #143b6e;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.fb-circle:hover {
+  background-color: #145dbf;
+  transform: scale(1.1);
+}
+   
+   .insta-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f324d7;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+    transition: 0.3s ease;
+}
+.insta-circle:hover {
+  background-color: #f2f3f5;
+    transform: scale(1.1);
+}
+ 
+    .linkdin-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b1fa;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+   transition: 0.3s ease;
+}
+.linkdin-circle:hover {
+  background-color: #f2f3f5;
+  transform: scale(1.1);
+}
+
+ .twitter-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b1fa;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+   transition: 0.3s ease;
+}
+.twitter-circle:hover {
+  background-color: #f2f3f5;
+  transform: scale(1.1);
+}
+.button{position: absolute;
+ bottom: 20px; 
+ left: 30%;
+  transform: translateX(-50%);
+   padding: 5px 10px;
+   background-color: white;
+   border-radius: 20px;
+   text-decoration: none;
+   color: black;
+   }
+   .button:hover{
+   background-color: rgb(204, 204, 204);
+   }
+</style>
+    </head>
+<body>
+        
+<!--Nav bar section-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+  <a class="navbar-brand" href="file:///C:/Users/DeLL/Desktop/Assignment%20no%2003/website.html?#"><img src="nike.png" alt="" style="height: 40px;width:70px;"></a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"  style="justify-content: center; color: #000000;" id="navbarContent">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 100px;" href="womens.html">
+         <b>Women</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>New & Features</h6>
+                <a href="#">Best seller</a>
+                <a href="#">New arrival</a>
+                <h6>Shop by Colors</h6>
+                <a href="#">Pink pops</a>
+                <a href="#">Timeless Neutral</a>
+                <a href="#">Teal Tones</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Shoes</h6>
+                <a href="#">Lifestyle</a>
+                <a href="#">Running</a>
+                <h6>Clothing</h6>
+                <a href="#">24.7 Collection</a>
+                <a href="#">Skirts & Dresses</a>
+                <a href="#">Matching Sets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="mens.html">
+         <b>Men</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>New & Features</h6>
+                <a href="#">Latest Drops</a>
+                <a href="#">Best Sellers</a>
+                <h6>Clothing</h6>
+                <a href="#">Hoodies & Sweatshirts</a>
+                <a href="#">Sale Clothing</a>
+                <a href="#">Matching Sets</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Shoes</h6>
+                <a href="#">Training & Gym</a>
+                <a href="#">Lifestyle</a>
+                <h6>Accessories</h6>
+                <a href="#">Belt </a>
+                <a href="#">Socks</a>
+                <a href="#">Sun Glasses</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="#">
+          <b>Kids</b>
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>Get Set For School</h6>
+                <a href="#back to school">Back to school & Extra 20% OFF</a>
+                <a href="#new arrival">New Arrivals</a>
+                <h6>All shoes</h6>
+                <a href="#big kids">Big Kids (7-15yrs)</a>
+                <a href="#little kids">Little Kids (3-7yrs)</a>
+                <a href="#lifestyle">Lifestyle</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>All Clothing</h6>
+                <a href="#big kids">Big Kids (7-15yrs)</a>
+                <a href="#little kids">Little Kids (3-7yrs)</a>
+                <h6>Shop By Sports</h6>
+                <a href="#running">Running</a>
+                <a href="#soccer">Soccer</a>
+                <a href="#basketball">Basketball</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="sports.html">
+         <b>Sports</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>Basketball</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Apparel</a>
+                <h6>Running</h6>
+                <a href="#">Race</a>
+                <a href="#">Road</a>
+                <a href="#">Trail</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Football</h6>
+                <a href="#">Cleats</a>
+                <a href="#">NFL</a>
+                <h6>Soccer</h6>
+                <a href="#">Indoor Footwear</a>
+                <a href="#">Equipment</a>
+                <a href="#">Club Team Gear</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="sale.html">
+         <b>Sale</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>Back To School Sale</h6>
+                <a href="#">Extra 20% OFF</a>
+                <h6>All Sale</h6>
+                <a href="#">Sale Shoes</a>
+                <a href="#">Sale Clothing</a>
+                <a href="#">Sale Accessories</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Men</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+                <h6>Women</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+              </div>
+                           
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="jordan.html">
+         <b>Jordan</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+           <div class="row">
+              <div class="col-lg-6">
+                <h6>New & Features</h6>
+                <a href="#">Jordan Heat Check</a>
+                <a href="#">Shop Back To Sport</a>
+                <h6>Sports</h6>
+                <a href="#">Jordan Basketball</a>
+                <a href="#">Jordan Golf</a>
+                <a href="#">Jordan Cleats</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Men</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+                <h6>Formals</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+                <a href="#">All</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+     </div>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+<!--contact us icon  section-->
+
+ <a style="margin-left: 20px; font-size: 30px;" href="contact us.html"target="-blank" ><i class="fas fa-user"></i></a>
+
+
+</nav>
+
+<!-- This is alert section  -->
+<div class="alert alert-light" role="alert" style="text-align: center;">
+Up to 50% Off Select Styles: Use code <b>SPORT</b>
+</div>
+
+    
+<!-- This is Carasoul section  -->
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="banner11.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="banner13.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="banner10.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--Shop by sports section-->
+
+<br><br><br><br>
+<h1 style="text-align: left;margin-left: 60px;"><b>Shop By Sports</b></h1>
+<br><br>
+<div style="display: flex;">
+  <div style="position: relative; margin-left: 55px;">
+    <img src="poster10.png" height="500px" width="400px" style="box-shadow: 0px 4px 10px rgb(216,216,216);">
+    <a href="#" class="button">Shop Running</a> 
+  </div>
+
+  <div style="position: relative; margin-left: 30px;">
+    <img src="poster11" height="500px" width="400px" style="box-shadow: 0px 4px 10px rgb(216,216,216);">
+     <a href="#" class="button">Shop Basketball</a> 
+  </div>
+
+  <div style="position: relative; margin-left: 30px;">
+    <img src="poster12" height="500px" width="400px" style="box-shadow: 0px 4px 10px rgb(216,216,216);">
+ <a href="#" class="button">Shop Soccer</a> 
+  </div>
+</div>
+
+
+<!--this is video section-->
+<br><br><br><br><br>
+<video autoplay muted loop playsinline style="height:400px; width:1100px;margin-left: 130px;" controls>
+    <source src="kidsvideo.mp4">
+</video>
+
+
+
+<!--this is Get set for school section-->
+<br><br><br><br>
+<h1 style="text-align: left;margin-left: 60px;"><b>Get Set For School</b></h1>
+<br>
+<section id="back to school">
+<!--extra 20%off-->
+<h2 style="text-align: center;"><b>Back To School & Extra 20% OFF </b></h2>
+<br>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kids1" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p style="color: green;text-align: center;">Extra 20% OFF</p>
+    <h5 class="card-title" style="text-align: center;">Nike Sports Wear Club</h5>
+    <p style="text-align: center;"><b>$40</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kids2" class="card-img-top" alt="...">
+  <div class="card-body">
+   <p style="color: green;text-align: center;">Extra 20% OFF</p>
+    <h5 class="card-title" style="text-align: center;">Nike Air Max 90</h5>
+    <p style="text-align: center;"><b>$80</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kids3" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+ <p style="color: green;text-align: center;">Extra 20% OFF</p>
+    <h5 class="card-title" style="text-align: center;">Nike Sportswear Club Fleece</h5>
+    <p style="text-align: center;"><b>$45</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kids4" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+ <p style="color: green;text-align: center;">Extra 20% OFF</p>
+    <h5 class="card-title" style="text-align: center;">Nike Every Plus</h5>
+    <p style="text-align: center;"><b>$22.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+
+
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kids5" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p style="color: green;text-align: center;">Extra 20% OFF</p>
+    <h5 class="card-title" style="text-align: center;">Nike Full Force Low</h5>
+    <p style="text-align: center;"><b>$68.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid6" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p style="color: green;text-align: center;">Extra 20% OFF</p>
+    <h5 class="card-title" style="text-align: center;">Jordan Spizike Low School</h5>
+    <p style="text-align: center;"><b>$135</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid7" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+       <p style="color: green;text-align: center;">Extra 20% OFF</p>
+    <h5 class="card-title" style="text-align: center;"> Jordan 1 Low  ALT SE</h5>
+    <p style="text-align: center;"><b>$70</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid8" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <p style="color: green;text-align: center;">Extra 20% OFF</p>
+    <h5 class="card-title" style="text-align: center;"> Jordan Air School</h5>
+    <p style="text-align: center;"><b>$29.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+</section>
+
+<!--new arrivals-->
+<section id="new arrival">
+<br>
+<h2 style="text-align: center;"><b>New Arrivals</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid9" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike </h5>
+    <p style="text-align: center;"><b>$125</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid10" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Air Max 270 </h5>
+    <p style="text-align: center;"><b>$110</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid11" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Jordan 3 Retro "Pure Money"</h5>
+    <p style="text-align: center;"><b>$75</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid12" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike</h5>
+    <p style="text-align: center;"><b>$20</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+
+
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid13" class="card-img-top" alt="...">
+  <div class="card-body">
+  <br>
+    <h5 class="card-title" style="text-align: center;">Nike Varsity Prep</h5>
+    <p style="text-align: center;"><b>$52</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid14" class="card-img-top" alt="...">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Nike X LEGO Collection</h5>
+    <p style="text-align: center;"><b>$35</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid15" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+     <br>
+    <h5 class="card-title" style="text-align: center;">Nike React X Rejuven8 </h5>
+    <p style="text-align: center;"><b>$60</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid16" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+     <br>
+    <h5 class="card-title" style="text-align: center;">Nike Dri-FIT </h5>
+    <p style="text-align: center;"><b>$25</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+</section>
+
+<!--this is all clothing section-->
+<br><br><br><br>
+<h1 style="text-align: left;margin-left: 60px;"><b>All Clothing</b></h1>
+<br>
+<section id="big kids">
+<!--big kids -->
+
+<h2 style="text-align: center;"><b>Big Kids (7-15yrs)</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid17" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Pro</h5>
+    <p style="text-align: center;"><b>$48.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid18" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Sports Wear</h5>
+    <p style="text-align: center;"><b>$80</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid19" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Nike Tech </h5>
+    <p style="text-align: center;"><b>$80.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid20" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Sports Club Fleece</h5>
+    <p style="text-align: center;"><b>$40</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+<br>
+</section>
+
+<!--little kids-->
+<section id="little kids">
+<h2 style="text-align: center;"><b>Little Kids (3-7yrs)</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid21" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Swoosh On Pointe</h5>
+    <p style="text-align: center;"><b>$52</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid22" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike</h5>
+    <p style="text-align: center;"><b>$125</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid23" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Jordan Y2K</h5>
+    <p style="text-align: center;"><b>$34.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid24" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike </h5>
+    <p style="text-align: center;"><b>$40</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+</section>
+
+
+<!--this is shoes section-->
+<br><br><br><br>
+<h1 style="text-align: left;margin-left: 60px;"><b>All Shoes</b></h1>
+<br>
+<section id="big kids">
+<!--big kids-->
+
+<h2 style="text-align: center;"><b> Big Kids (7-15yrs)</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid25" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Air Max Phoenix</h5>
+    <p style="text-align: center;"><b>$125</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid26" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Flex Runner 4</h5>
+    <p style="text-align: center;"><b>$50</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid27" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Air Jordan 4 Retro</h5>
+    <p style="text-align: center;"><b>$160</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid28" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Tatum 3 </h5>
+    <p style="text-align: center;"><b>$95.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+<br>
+</section>
+
+<!--little kids-->
+<section id="little kids">
+<h2 style="text-align: center;"><b>Little Kids(3-7yrs)</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid29" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Jordan 4 RM</h5>
+    <p style="text-align: center;"><b>$63.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid30" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Aqua Swoosh</h5>
+    <p style="text-align: center;"><b>$42.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid31" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Ja 2 "Heart Eyes" </h5>
+    <p style="text-align: center;"><b>$58.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid32" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Woodside 2 High</h5>
+    <p style="text-align: center;"><b>$61.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+<br>
+</section>
+
+<!--lifestyle-->
+<section id="lifestyle">
+<h2 style="text-align: center;"><b>Lifestyles</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid33" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike CITY </h5>
+    <p style="text-align: center;"><b>$63.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid34" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Dunk Low</h5>
+    <p style="text-align: center;"><b>$55</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid35" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Jordan Franchise</h5>
+    <p style="text-align: center;"><b>$26.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid36" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;"> Jordan 1 Mid RM EasyOn</h5>
+    <p style="text-align: center;"><b>$63.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+<br>
+</section>
+
+
+<!--this is shop by sports section-->
+<br><br><br><br>
+<h1 style="text-align: left;margin-left: 60px;"><b>Shop By Sports</b></h1>
+<br>
+<section id="running">
+<!--Running-->
+
+<h2 style="text-align: center;"><b>Running</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid37" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Tempo</h5>
+    <p style="text-align: center;"><b>$25</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid38" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Star Runner 4</h5>
+    <p style="text-align: center;"><b>$41.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid39" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Nike Agility </h5>
+    <p style="text-align: center;"><b>$52.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid40" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Brasilia </h5>
+    <p style="text-align: center;"><b>$35.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+<br>
+</section>
+
+
+<!--soccer-->
+<section id="soccer">
+<h2 style="text-align: center;"><b>Soccer</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid41" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Jr. Mericurial Vapour 16 </h5>
+    <p style="text-align: center;"><b>$150</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid42" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike</h5>
+    <p style="text-align: center;"><b>$11.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid43" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Nike Vapour Jet 7.0</h5>
+    <p style="text-align: center;"><b>$32.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid44" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Jr. Phantom Luna 2 </h5>
+    <p style="text-align: center;"><b>$55</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+<br>
+</section>
+
+<!--baskeball-->
+<section id="basketball">
+<h2 style="text-align: center;"><b>Basketball</b></h2>
+<div style="display: flex;">
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid45" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Elite Champaionship </h5>
+    <p style="text-align: center;"><b>$85</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid46" class="card-img-top" alt="...">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Ja 2 SE</h5>
+    <p style="text-align: center;"><b>$89.97</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid47" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+      <br>
+    <h5 class="card-title" style="text-align: center;">Aj'a Wilson Club Fleece </h5>
+    <p style="text-align: center;"><b>$55</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+<div class="card box-shadow" style="width: 18rem;margin: 30px;" >
+  <img src="kid48" class="card-img-top" alt="..." style="height:280px ;">
+  <div class="card-body">
+    <br>
+    <h5 class="card-title" style="text-align: center;">Nike Pro </h5>
+    <p style="text-align: center;"><b>$35</b></p>
+    <a href="#" class="btn btn-primary" style="margin-left: 55px;background-color: black;">ADD TO CARD</a>
+
+  </div>
+</div>
+</div>
+<br>
+</section>
+
+<br><br><br><br><br>
+<!-- This is footer section 1 -->
+<div style="background-color: rgb(241, 239, 241);width:1350px;padding:30px;height:300px;justify-content: space-between;align-items: center;display: flex;">
+<div>
+  <img src="nike.png"   style="height:100px; width:180px;margin-left: 25px;" >
+  <h2 style="color: black;margin: auto;margin-left: 40px;"><b>Just Do It.</b></h2>
+  <p style="color: black;font-size: 23px;"><b>Social Media Platforms</b></p>
+<a style="margin-left: 0px;" href="https://www.facebook.com/nike/"target="-blank" class="fb-circle"><i class="fab fa-facebook-f"></i></a>
+ <a style="margin-left: 20px;" href="https://www.linkedin.com/company/nike/"target="-blank" class="linkdin-circle"><i class="fab fa-linkedin-in"></i></a>
+ <a style="margin-left: 20px;" href="https://www.instagram.com/nike/?hl=en"target="-blank" class="insta-circle"><i class="fab fa-instagram"></i></a>
+<a style="margin-left: 20px;" href="https://x.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="-blank" class="twitter-circle"><i class="fab fa-twitter"></i></a>
+
+</div>
+
+<div>
+<h1 style="color: black;font-size: 35px;margin-top: 35px;"><b>Help</b></h1>
+<p style="color: black;line-height: 1.5;">Order Status<br> Contact Us<br> Returns<br>Shipping & Delievery<br> Payment Options</p>
+</div>
+
+<div>
+<h1 style="color: black;font-size: 35px;margin-top: 35px;"><b>Company</b></h1>
+<p style="color: black;line-height: 1.5;">About Nike<br> Our Services<br> Careers<br> Sustainability<br>Purpose</p>
+</div>
+
+<div>
+<h1 style="color: black;font-size: 35px;margin-top: 35px;"><b>Promotion & Discounts</b></h1>
+<p style="color: black;line-height: 1.5;">Student<br> Military<br> Teacher<br> Birthday<br> Medical Professionals</p>
+</div>
+</div>
+
+<!-- This is footer section 2-->
+
+<div style="background-color: rgb(235, 235, 235);width:1350px;padding:30px;height:20px;justify-content: space-between;align-items: center;display: flex;border-top: 1px solid;">
+<div>
+<p style="color: rgb(0, 0, 0);margin-left: 5px;margin-top: 20px;"> © 2025 Nike, Inc. All Rights Reserved</p>
+</div>
+
+<div>
+  <p style="color: rgb(0, 0, 0);margin-left: 650px;margin-top: 20px;">Initiative by Laiba Khalid</p>
+</div>
+  <div>
+
+    
+<!-- WhatsApp Icon -->
+ 
+<a href="https://web.whatsapp.com/" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>

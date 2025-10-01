@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<style>
+
+    body{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .dropdown-menu.mega-menu {
+      width: 500px;
+      padding: 20px;
+      margin-top: 0px ;
+      border-top: none;
+      border: 1px solid #ddd;
+      display: none;
+      
+      left: 0;
+      right: 0;
+    }
+
+    .mega-menu .row > div {
+      padding: 0 20px;
+    }
+
+    .mega-menu h6 {
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: large;
+    }
+
+    .mega-menu a {
+      display: block;
+      text-decoration: none;
+      color: #000000;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nav-item.dropdown {
+      position: relative;
+
+    }
+
+    .dropdown-toggle::after {
+      display: none; 
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-box input {
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      padding: 5px 15px;
+      font-size: 14px;
+    }
+
+    .search-box button {
+      border: none;
+      background-color: #000;
+      color: #fff;
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+
+    .nav-contact {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 15px;
+      color: #000;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .nav-contact:hover {
+      color: #007bff;
+    }
+    .search-container {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #555;
+}
+ .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.fb-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #143b6e;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.fb-circle:hover {
+  background-color: #145dbf;
+  transform: scale(1.1);
+}
+   
+   .insta-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f324d7;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+    transition: 0.3s ease;
+}
+.insta-circle:hover {
+  background-color: #f2f3f5;
+    transform: scale(1.1);
+}
+ 
+    .linkdin-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b1fa;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+   transition: 0.3s ease;
+}
+.linkdin-circle:hover {
+  background-color: #f2f3f5;
+  transform: scale(1.1);
+}
+
+ .twitter-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b1fa;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+   transition: 0.3s ease;
+}
+.twitter-circle:hover {
+  background-color: #f2f3f5;
+  transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+    
+<!--Nav bar section-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+  <a class="navbar-brand" href="file:///C:/Users/DeLL/Desktop/Assignment%20no%2003/website.html?#"><img src="nike.png" alt="" style="height: 40px;width:70px;"></a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"  style="justify-content: center; color: #000000;" id="navbarContent">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 100px;" href="womens.html">
+         <b>Women</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>New & Features</h6>
+                <a href="#">Best seller</a>
+                <a href="#">New arrival</a>
+                <h6>Shop by Colors</h6>
+                <a href="#">Pink Tops</a>
+                <a href="#">Timeless Neutral</a>
+                <a href="#">Teal Tones</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Shoes</h6>
+                <a href="#">Lifestyle</a>
+                <a href="#">Running</a>
+                <h6>Clothing</h6>
+                <a href="#">24.7 Collection</a>
+                <a href="#">Skirts & Dresses</a>
+                <a href="#">Matching Sets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="#">
+         <b>Men</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>New & Features</h6>
+                <a href="#">Latest Drops</a>
+                <a href="#">Best Sellers</a>
+                <h6>Clothing</h6>
+                <a href="#">Hoodies & Sweatshirts</a>
+                <a href="#">Sale Clothing</a>
+                <a href="#">Matching Sets</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Shoes</h6>
+                <a href="#">Training & Gym</a>
+                <a href="#">Lifestyle</a>
+                <h6>Accessories</h6>
+                <a href="#">Belt </a>
+                <a href="#">Socks</a>
+                <a href="#">Sun Glasses</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="#">
+          <b>Kids</b>
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>Get Set For School</h6>
+                <a href="#">Back to school & Extra 20% OFF</a>
+                <a href="#">New Arrivals</a>
+                <h6>All shoes</h6>
+                <a href="#">Big Kids (7-15yrs)</a>
+                <a href="#">Little Kids (3-7yrs)</a>
+                <a href="#">Lifestyle</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>All Clothing</h6>
+                <a href="#">Big Kids (7-15yrs)</a>
+                <a href="#">Little Kids (3-7yrs)</a>
+                <h6>Shop By Sports</h6>
+                <a href="#">Running</a>
+                <a href="#">Soccer</a>
+                <a href="#">Basketball</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="#">
+         <b>Sports</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>Basketball</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Apparel</a>
+                <h6>Running</h6>
+                <a href="#">Race</a>
+                <a href="#">Road</a>
+                <a href="#">Trail</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Football</h6>
+                <a href="#">Cleats</a>
+                <a href="#">NFL</a>
+                <h6>Soccer</h6>
+                <a href="#">Indoor Footwear</a>
+                <a href="#">Equipment</a>
+                <a href="#">Club Team Gear</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="#">
+         <b>Sale</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>Back To School Sale</h6>
+                <a href="#">Extra 20% OFF</a>
+                <h6>All Sale</h6>
+                <a href="#">Sale Shoes</a>
+                <a href="#">Sale Clothing</a>
+                <a href="#">Sale Accessories</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Men</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+                <h6>Women</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+              </div>
+                           
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: #000000;margin-left: 15px;" href="#">
+         <b>Jordan</b> 
+        </a>
+        <div class="dropdown-menu mega-menu">
+          <div class="container">
+           <div class="row">
+              <div class="col-lg-6">
+                <h6>New & Features</h6>
+                <a href="#">Jordan Heat Check</a>
+                <a href="#">Shop Back To Sport</a>
+                <h6>Sports</h6>
+                <a href="#">Jordan Basketball</a>
+                <a href="#">Jordan Golf</a>
+                <a href="#">Jordan Cleats</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Men</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+                <h6>Formals</h6>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+                <a href="#">All</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+     </div>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+</nav>
+    
+
+
+<!--this is banner -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="banner2.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+    </div>
+</div>
+
+
+<!--this is search bar -->
+<br><br>
+<h1 style="text-align: center;"><b>GET HELP</b></h1>
+<br>
+<div class="search-container">
+  <input type="text" placeholder="What can we help you with?" />
+  <button type="submit">
+    <span class="search-icon">&#128269;</span> <!-- Unicode magnifying glass -->
+  </button>
+</div>
+
+<br><br><br>
+<h2 style="margin-left: 150px;"><b>Quick Assist</b></h2>
+<p style="margin-left: 150px;">Answers to our most frequently asked questions are just one click away.</p>
+<hr style="width: 1250px;margin-left: 40px;">
+<br>
+<div style="display: flex;">
+    <div>
+<p style="margin-left: 120px;"> <b>Returns</b></p>
+<p style="margin-left: 120px;">How do I return my Nike order?</p>
+<p style="margin-left: 120px;">How do I return my Nike order?</p>
+<p style="margin-left: 120px;">Where is my refund?</p>
+</div>
+
+ <div>
+<p style="margin-left: 120px;"> <b>Shipping & Delivery</b></p>
+<p style="margin-left: 120px;">What are Nike's shipping options?</p>
+<p style="margin-left: 120px;">Can I buy online and pick up at a Nike store?</p>
+<p style="margin-left: 120px;">How do I get free shipping on Nike orders?</p>
+</div>
+
+ <div>
+<p style="margin-left: 120px;"> <b>Orders & Payment</b></p>
+<p style="margin-left: 120px;">Where is my Nike order?</p>
+<p style="margin-left: 120px;">Can I cancel or change my Nike order?</p>
+<p style="margin-left: 120px;">What are Nike's payment options?</p>
+</div>
+</div>
+
+<br>
+<div style="display: flex;">
+    <div>
+<p style="margin-left: 120px;"> <b>Shopping</b></p>
+<p style="margin-left: 120px;">How do I find the right size and fit?</p>
+<p style="margin-left: 120px;">How can I get Nike's best deals?</p>
+<p style="margin-left: 120px;">Does Nike offer product advice?</p>
+</div>
+
+ <div>
+<p style="margin-left: 100px;"> <b>Nike Membership & Apps</b></p>
+<p style="margin-left: 100px;">What is Nike Membership?</p>
+<p style="margin-left: 100px;">What is Nike SNKRS Pass?</p>
+<p style="margin-left: 100px;">How can I join a SNKRS Draw?</p>
+</div>
+
+ <div>
+<p style="margin-left: 220px;"> <b>Company Info</b></p>
+<p style="margin-left: 220px;">Do Nike shoes have a warranty?</p>
+<p style="margin-left: 220px;">Can I recycle my Nike shoes?</p>
+<p style="margin-left: 220px;">Does Nike offer grants or donations?</p>
+</div>
+</div>
+
+<hr style="width: 1250px;margin-left: 40px;">
+<br>
+<p style="margin-left: 120px;"> <b>Order Cycle Time</b></p>
+<ul>
+    <li style="margin-left: 120px;">Products & Orders: 4 am - 11 pm PT, 7 days a week NRC, NTC & .SWOOSH: 8 am - 5 pm PT, Mon - Fri Company Info & Inquiries:<br> 7 am
+- 4 pm PT, Mon - Fri</li>
+<br>
+ <li style="margin-left: 120px;">Products & Orders: 4 am - 11 pm PT 7 days a week</li>
+</ul>
+
+
+
+<!--this is need bar section-->
+<br><br><br><br>
+<div style="background-color: rgb(250, 246, 246);width:1250px;padding:20px;height:200px;justify-content: space-between;align-items: center;display: flex;margin-left: 50px;box-shadow: rgba(0, 0, 0, 0.3);">
+
+    <div>
+        <h1 style="margin-left: 20px;"><b>Need <br>Assistance?</b></h1>
+    </div>
+    <div>
+        <a href=https://web.whatsapp.com/ target="-blank" style="color: black;text-decoration: none;margin-left: 140px;margin-right: 20px;"><b>Email:</b> customerservice.us@nike.com</a>
+    <br>
+       <a href=https://mail.google.com/mail/u/1/#inbox target="-blank" style="color: black;text-decoration: none;margin-left: 140px;"><b>Call Us:</b>1-800-806-6453</a>
+</div>
+</div>
+<div>
+
+</div>
+
+
+
+
+
+
+
+
+<br><br><br><br><br>
+<!-- This is footer section 1 -->
+<div style="background-color: rgb(241, 239, 241);width:1350px;padding:30px;height:300px;justify-content: space-between;align-items: center;display: flex;">
+<div>
+  <img src="nike.png"   style="height:100px; width:180px;margin-left: 25px;" >
+  <h2 style="color: black;margin: auto;margin-left: 40px;"><b>Just Do It.</b></h2>
+  <p style="color: black;font-size: 23px;"><b>Social Media Platforms</b></p>
+<a style="margin-left: 0px;" href="https://www.facebook.com/nike/"target="-blank" class="fb-circle"><i class="fab fa-facebook-f"></i></a>
+ <a style="margin-left: 20px;" href="https://www.linkedin.com/company/nike/"target="-blank" class="linkdin-circle"><i class="fab fa-linkedin-in"></i></a>
+ <a style="margin-left: 20px;" href="https://www.instagram.com/nike/?hl=en"target="-blank" class="insta-circle"><i class="fab fa-instagram"></i></a>
+<a style="margin-left: 20px;" href="https://x.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="-blank" class="twitter-circle"><i class="fab fa-twitter"></i></a>
+
+</div>
+
+<div>
+<h1 style="color: black;font-size: 35px;margin-top: 35px;"><b>Help</b></h1>
+<p style="color: black;line-height: 1.5;">Order Status<br> Contact Us<br> Returns<br>Shipping & Delievery<br> Payment Options</p>
+</div>
+
+<div>
+<h1 style="color: black;font-size: 35px;margin-top: 35px;"><b>Company</b></h1>
+<p style="color: black;line-height: 1.5;">About Nike<br> Our Services<br> Careers<br> Sustainability<br>Purpose</p>
+</div>
+
+<div>
+<h1 style="color: black;font-size: 35px;margin-top: 35px;"><b>Promotion & Discounts</b></h1>
+<p style="color: black;line-height: 1.5;">Student<br> Military<br> Teacher<br> Birthday<br> Medical Professionals</p>
+</div>
+</div>
+
+<!-- This is footer section 2-->
+
+<div style="background-color: rgb(235, 235, 235);width:1350px;padding:30px;height:20px;justify-content: space-between;align-items: center;display: flex;border-top: 1px solid;">
+<div>
+<p style="color: rgb(0, 0, 0);margin-left: 5px;margin-top: 20px;"> © 2025 Nike, Inc. All Rights Reserved</p>
+</div>
+
+<div>
+  <p style="color: rgb(0, 0, 0);margin-left: 650px;margin-top: 20px;">Initiative by Laiba Khalid</p>
+</div>
+  <div>
+
+    
+<!-- WhatsApp Icon -->
+ 
+<a href="https://web.whatsapp.com/" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
